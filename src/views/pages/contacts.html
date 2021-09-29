@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Контакты"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Контакты
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <section class="section contacts">
+                <div class="container">
+                    <h1>Контакты</h1>
+                    <div class="contacts__address">
+                        г. Минск, ул. Советская, д. 41, пом. 26
+                    </div>
+                    <div class="contacts__inner sm-flex">
+                        <address class="contacts__content">
+                            <dl class="contacts__list">
+                                <div class="contacts__item">
+                                    <dt>Конактный номер</dt>
+                                    <dd><a href="tel:+375298888888">+375 (29) 888 88 88</a></dd>
+                                </div>
+                                <div class="contacts__item">
+                                    <dt>E-mail</dt>
+                                    <dd><a href="mailto:Globalles@gmail.com">Globalles@gmail.com</a></dd>
+                                </div>
+                                <div class="contacts__item">
+                                    <dt>Время работы</dt>
+                                    <dd>Пн-пт 09.00-18.00</dd>
+                                </div>
+                            </dl>
+                            <div class="contacts-social md-flex md-jcsb">
+                                <ul class="contacts-social__col">
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">Instagram</a>
+                                    </li>
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">Telegram</a>
+                                    </li>
+                                </ul>
+                                <ul class="contacts-social__col">
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">VK</a>
+                                    </li>
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">Viber</a>
+                                    </li>
+                                </ul>
+                                <ul class="contacts-social__col">
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">Facebook</a>
+                                    </li>
+                                    <li class="contacts-social__item">
+                                        <a href="#" class="contacts-social__link">WhatsApp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </address>
+                        <div class="contacts__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.981118425388!2d27.546889516006495!3d53.89653954105743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe87518b2cb%3A0xc13c1194c532898d!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPIDQxLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1632917367921!5m2!1sru!2sby"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <!-- @@include('../../blocks/modules/popups/_popups.html') -->
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

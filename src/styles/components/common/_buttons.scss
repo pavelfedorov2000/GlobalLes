@@ -1,0 +1,36 @@
+.btn {
+    min-width: 24rem;
+    height: 5.8rem;
+    @extend %flex-center;
+    display: inline-flex;
+    background-color: $accent;
+    font-weight: 600;
+    color: #F5F5F5;
+    text-align: center;
+    border: 0.1rem solid $accent;
+    transition: .3s color;
+
+    @media(max-width: 992px) {
+        height: 4.4rem;
+    }
+
+    &__arrow {
+        width: 1.6rem;
+        height: 1.7rem;
+        flex-shrink: 0;
+        margin-left: 0.3rem;
+        path {
+            transition: .3s fill;
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: $accent;
+            background-color: transparent;
+            .btn__arrow path {
+                fill: $accent;
+            }
+        }
+    }
+}

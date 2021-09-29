@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "О нас"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                О компании
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <div class="top-about">
+                <div class="container top-about__container">
+                    <h1>О компании</h1>
+                    <div class="top-about__logo">
+                        <img src="img/logo/global-les_green.svg" alt="логотип GlobalLes">
+                    </div>
+                </div>
+            </div>
+
+            <section class="section about-us">
+                <div class="container">
+                    <div class="sm-flex sm-jcsb">
+                        <h2 class="section-title about-us__title">О нас</h2>
+                        <div class="about-us__content">
+                            <blockquote class="page-title about-us__quote">
+                                «В вашем доме хорошо,
+                                а в наших ещё лучше»
+                            </blockquote>
+                            <div class="about-us__text">
+                                <p>
+                                    Мы основали нашу компаню в 2021 году.
+                                </p>
+                                <p>
+                                    Ее создателями и впоследствии движущей силой стала команда профессионалов с огромным
+                                    опытом работы. Глубокое знание сферы помогло компании совершить важный прорыв в
+                                    области деревянного домостроения. Главной идеей стало строительство качественных и
+                                    комфортных домов.
+                                </p>
+                            </div>
+                            <div class="about-us__numbers about-numbers flex">
+                                <div class="about-numbers__item">
+                                    <div class="about-numbers__item-title">Построенно м2</div>
+                                    <div class="about-numbers__item-value">5000</div>
+                                </div>
+                                <div class="about-numbers__item">
+                                    <div class="about-numbers__item-title">Реализованных объектов</div>
+                                    <div class="about-numbers__item-value">500</div>
+                                </div>
+                                <div class="about-numbers__item">
+                                    <div class="about-numbers__item-title">Довольных клиенов</div>
+                                    <div class="about-numbers__item-value">50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section values">
+                <div class="container">
+                    <div class="md-jcsb values__inner">
+                        <h2 class="section-title values__title" data-da=".values__content, 992, first">Наши ценности
+                        </h2>
+                        <div class="values__content flex flex-col aifs">
+                            <div class="values__text">
+                                <p>
+                                    Мы предоставляем абсолютно новый подход к работе, к осуществлению вашей мечты.
+                                    Желания клиента являются для нас точной и главной задачей на пути строительства
+                                    красивого современного безопасного дома.
+                                </p>
+                                <p>
+                                    Мы предоставляем абсолютно новый подход к работе, к осуществлению вашей мечты.
+                                    Желания клиента являются для нас точной и главной задачей на пути строительства
+                                    красивого современного безопасного дома.
+                                </p>
+                            </div>
+                            <a href="#feedback" class="btn">
+                                Заказать проект
+                                <svg class="btn__arrow">
+                                    <use xlink:href="img/sprite.svg#btn-arr"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="values__img">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="img/content/our-values.jpg">
+                                <source media="(min-width: 576px)" srcset="img/content/our-values_md.jpg">
+                                <source media="(min-width: 320px)" srcset="img/content/our-values_xs.jpg">
+                                <img src="img/content/our-values_xs.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <!-- @@include('../../blocks/modules/popups/_popups.html') -->
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

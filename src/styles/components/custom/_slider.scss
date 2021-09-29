@@ -1,0 +1,124 @@
+.swiper-container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+    left: 0;
+    bottom: 0;
+}
+
+.swiper-pagination {
+    display: flex;
+    counter-reset: slide;
+}
+
+.swiper-pagination-bullet {
+    position: relative;
+    width: 13.6rem;
+    height: 0.2rem;
+    border-radius: 0;
+    background-color: #B0B2AF;
+    font-size: 0;
+    opacity: 1;
+    margin: 0 !important;
+
+    @media(max-width: 768px) {
+        width: 33.3333%;
+    }
+
+    &:last-child {
+        @media(max-width: 992px) {
+            width: 10.5rem;
+        }
+
+        @media(max-width: 768px) {
+            width: 33.3333%;
+        }
+    }
+
+    @media(max-width: 992px) {
+        width: 12.4rem;
+    }
+
+    &:before {
+        content: '0'counter(slide);
+        counter-increment: slide;
+        position: absolute;
+        top: -2.6rem;
+        left: 0;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        color: #B0B2AF;
+
+        @media(max-width: 992px) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $dark;
+
+    &:before {
+        color: $dark;
+    }
+}
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+    &:before {
+        content: '0';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    @extend %pos-center-y;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: rgba(16, 22, 12, 0.5);
+    margin: 0;
+
+    @media(max-width: 992px) {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &:after {
+        content: '';
+    }
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+
+        @media(max-width: 992px) {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-button-next {
+    right: 0;
+}

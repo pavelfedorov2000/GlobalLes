@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Услуги"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Услуги
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <section class="section our-services">
+                <div class="container">
+                    <div class="our-services__inner">
+                        <div class="our-services__content">
+                            <h1>
+                                Наши<br>
+                                услуги
+                            </h1>
+                            <svg>
+                                <use xlink:href="img/sprite.svg#green-arr"></use>
+                            </svg>
+                        </div>
+                        <div class="our-services__img">
+                            <img src="img/content/our-services.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section home-building">
+                <div class="container home-building__container">
+                    <h2 class="middle-title home-building__title">
+                        Строительство домов <span>«Под ключ»</span>
+                    </h2>
+                    <div class="sm-flex md-jcsb home-building__inner">
+                        <div class="home-building__left-col">
+                            <p class="home-building__left-text" data-da=".home-building__container, 992, 1">
+                                Предлагаем широкий выбор проектов современных домов из бруса. Выполняем весь цикл работ
+                                с нуля и под ключ.
+                            </p>
+                            <img class="home-building__left-img" src="img/content/home-building/01.jpg" alt="">
+                        </div>
+                        <div class="home-building__right-col flex flex-col aifs">
+                            <div class="home-building__right-img">
+                                <img src="img/content/home-building/02.jpg" alt="">
+                            </div>
+                            <p>
+                                Мы можем реализовать любой из вариантов, представленных в каталоге или построить дом по
+                                индивидуальному проекту. Наши сотрудники помогут выбрать наилучший вариант с учетом
+                                особенностей вашего участка (размеров, ландшафта и т.д.). Гарантируем строгое соблюдение
+                                инженерно- технических требований, предъявляемых к строению. Дома из бруса под ключ,
+                                построенные нашей компанией надежны и безопасны. Стоимость напрямую зависит от площади
+                                застройки.
+                            </p>
+                            <a href="#feedback" class="btn">
+                                Заказать проект
+                                <svg class="btn__arrow">
+                                    <use xlink:href="img/sprite.svg#btn-arr"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section baths">
+                <div class="container">
+                    <div class="baths__inner sm-flex md-jcsb">
+                        <div class="baths__left-col">
+                            <div class="baths__left-img" data-da=".baths__right-col, 767, 1">
+                                <img src="img/content/baths/01.jpg" alt="баня">
+                            </div>
+                        </div>
+                        <div class="baths__right-col flex flex-col aifs">
+                            <h2 class="middle-title baths__title">Бани</h2>
+                            <p>
+                                Мы можем реализовать любой из вариантов, представленных в каталоге или построить баню по
+                                индивидуальному проекту. Наши сотрудники помогут выбрать наилучший вариант с учетом
+                                особенностей вашего участка (размеров, ландшафта и т.д.). Гарантируем строгое соблюдение
+                                инженерно- технических требований, предъявляемых к строению. Бани из бруса под ключ,
+                                построенные нашей компанией надежны и безопасны. Стоимость напрямую зависит от площади
+                                застройки.
+                            </p>
+                            <a href="#feedback" class="btn">
+                                Заказать проект
+                                <svg class="btn__arrow">
+                                    <use xlink:href="img/sprite.svg#btn-arr"></use>
+                                </svg>
+                            </a>
+                            <div class="baths__right-img">
+                                <img src="img/content/baths/02.jpg" alt="баня">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section industrial-wood">
+                <div class="container">
+                    <h2 class="middle-title industrial-wood__title">
+                        <span>Продажа</span> пиломатериалов
+                    </h2>
+                    <div class="industrial-wood__inner sm-flex">
+                        <div class="industrial-wood__col">
+                            <img class="industrial-wood__img" src="img/content/industrial-wood.jpg" alt="">
+                        </div>
+                        <div class="industrial-wood__col flex flex-col aifs">
+                            <div class="industrial-wood__text">
+                                <p>
+                                    Мы можем реализовать любой из вариантов, представленных в каталоге или построить
+                                    баню по индивидуальному проекту. Наши сотрудники помогут выбрать наилучший вариант с
+                                    учетом особенностей вашего участка (размеров, ландшафта и т.д.).
+                                </p>
+                                <p>
+                                    Гарантируем строгое соблюдение инженерно- технических требований, предъявляемых к
+                                    строению. Бани из бруса под ключ, построенные нашей компанией надежны и безопасны.
+                                    Стоимость напрямую зависит от площади застройки.
+                                </p>
+                            </div>
+                            <a href="#feedback" class="btn">
+                                Заказать проект
+                                <svg class="btn__arrow">
+                                    <use xlink:href="img/sprite.svg#btn-arr"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section individual-works">
+                <div class="container">
+                    <div class="individual-works__content flex jcsb aic">
+                        <h2 class="middle-title individual-works__title">
+                            <span>Индивидуальные</span><br>
+                            работы на заказ
+                        </h2>
+                        <p>
+                            Мы можем реализовать любой из вариантов, представленных в каталоге или построить баню по
+                            индивидуальному проекту. Наши сотрудники помогут выбрать наилучший вариант с учетом
+                            особенностей вашего участка (размеров, ландшафта и т.д.).
+                        </p>
+                        <a href="#feedback" class="btn">
+                            Заказать проект
+                            <svg class="btn__arrow">
+                                <use xlink:href="img/sprite.svg#btn-arr"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="iimg/content/individual-works.jpg">
+                        <source media="(min-width: 576px)" srcset="img/content/individual-works_md.jpg">
+                        <source media="(min-width: 320px)" srcset="img/content/individual-works_xs.jpg">
+                        <img src="img/content/individual-works_xs.jpg" alt="">
+                    </picture>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <!-- @@include('../../blocks/modules/popups/_popups.html') -->
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

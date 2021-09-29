@@ -1,0 +1,241 @@
+.top-about {
+
+    // .top-about__container
+
+    &__container {
+        background-image: url(../img/bg/top-about_bg.svg);
+        background-size: 79.4rem 45.1rem;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 8rem;
+        border-bottom: 0.1rem solid #E4E6E4;
+
+        @media(max-width: 992px) {
+            background-size: 41rem 23.3rem;
+            padding-bottom: 3rem;
+        }
+
+        @media(max-width: 575px) {
+            background-size: 24.4rem 13.8rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    // .top-about__logo
+
+    &__logo {
+        margin-top: 9rem;
+
+        @media(max-width: 992px) {
+            margin-top: 6rem;
+        }
+    }
+}
+
+.about-us {
+    padding: 10rem 0 21rem;
+
+    @media(max-width: 992px) {
+        padding-top: 6rem;
+    }
+
+    @media(max-width: 575px) {
+        padding-top: 8rem;
+    }
+
+    &__title {
+        white-space: nowrap;
+
+        @media(max-width: 767px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    // .about-us__content
+
+    &__content {
+        width: 115.6rem;
+
+        @media(max-width: 992px) {
+            width: 100%;
+            padding-left: 6rem;
+        }
+
+        @media(max-width: 767px) {
+            padding-left: 0;
+        }
+    }
+
+    // .about-us__quote
+
+    &__quote {
+        margin: 0 0 4rem 0;
+
+        @media(max-width: 992px) {
+            margin-bottom: 3rem;
+        }
+
+        @media(max-width: 575px) {
+            text-align: center;
+        }
+    }
+
+    // .about-us__text
+
+    &__text {
+
+        margin-bottom: 8rem;
+
+        @media(max-width: 992px) {
+            margin-bottom: 4rem;
+        }
+
+        @media(max-width: 767px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__numbers {
+        flex-wrap: wrap;
+
+        @media(max-width: 992px) {
+            margin: -1rem -1.5rem;
+        }
+        @media(max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.about-numbers {
+
+    // .about-numbers__item
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10.9rem;
+
+            @media(max-width: 992px) {
+                margin-right: 0;
+            }
+
+            @media(max-width: 767px) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media(max-width: 992px) {
+            width: 50%;
+            padding: 1rem 1.5rem;
+        }
+
+        @media(max-width: 575px) {
+            width: auto;
+            padding: 1rem 1.5rem;
+        }
+
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    // .about-numbers__item-title
+
+    &__item-title {
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid #E4E6E4;
+        margin-bottom: 1rem;
+
+        @media(max-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+
+    // .about-numbers__item-value
+
+    &__item-value {
+        font-size: 9.6rem;
+        line-height: 10rem;
+        font-weight: 700;
+        color: $accent;
+        font-feature-settings: 'pnum'on,
+            'lnum'on;
+
+        @media(max-width: 992px) {
+            font-size: 4.6rem;
+            line-height: 5rem;
+        }
+    }
+}
+
+.values {
+
+    &__inner {
+        @media(max-width: 992px) {
+            margin: 0 -1rem;
+        }
+
+        @media(min-width: 576px) {
+            display: flex;
+        }
+    }
+
+    &__title {
+        @media(max-width: 575px) {
+            align-self: flex-start;
+        }
+    }
+
+    // .values__content
+
+    &__content {
+        width: 37.7rem;
+
+        @media(max-width: 992px) {
+            width: 50%;
+            padding: 0 1rem;
+        }
+
+        @media(max-width: 575px) {
+            width: 100%;
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+    }
+
+    // .values__text
+
+    &__text {
+        flex: 1 1 auto;
+
+        @media(max-width: 992px) {
+            margin: 3rem 0;
+        }
+
+        @media(max-width: 575px) {
+            margin-top: 2rem;
+        }
+    }
+
+    // .values__img
+
+    &__img {
+        width: 68rem;
+
+        @media(max-width: 992px) {
+            width: 50%;
+            padding: 0 1rem;
+        }
+
+        @media(max-width: 575px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

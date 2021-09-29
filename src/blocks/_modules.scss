@@ -1,0 +1,25 @@
+// ============== COMMON ============= //
+@import 'modules/header/header';
+@import 'modules/burger/burger';
+@import 'modules/drop-catalog/drop-catalog';
+@import 'modules/footer/footer';
+@import 'modules/feedback/feedback';
+//@import 'modules/popups/popups';
+
+@import 'modules/about/about';
+@import 'modules/contacts/contacts';
+
+// ============= HOME-PAGE ============== //
+@import 'modules/promo/promo';
+@import 'modules/services/services';
+@import 'modules/about-company/about-company';
+@import 'modules/manufacture/manufacture';
+//@import 'modules/reviews/reviews';
+//@import 'modules/benefits/benefits';
+
+// ============= CATALOG-PAGE ============== //
+@import 'modules/catalog/catalog';
+@import 'modules/benefits/benefits';
+
+// ============= PRODUCT-CARD-PAGE ============== //
+@import 'modules/product-card/product-card';

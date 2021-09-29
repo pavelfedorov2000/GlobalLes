@@ -1,0 +1,40 @@
+.breadcrumbs {
+    padding-bottom: 6rem;
+
+    @media(max-width: 992px) {
+        padding-bottom: 5rem;
+    }
+
+    @media(max-width: 767px) {
+        padding-bottom: 4rem;
+    }
+
+    @media(max-width: 575px) {
+        padding-bottom: 3rem;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        padding-right: 1.6rem;
+        margin-right: 0.8rem;
+
+        @media(max-width: 992px) {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+
+        &:not(:last-child) {
+            &:after {
+                content: '/';
+                position: absolute;
+                @extend %pos-center-y;
+                right: 0;
+            }
+        }
+
+        span {
+            color: #B0B2AF;
+        }
+    }
+}

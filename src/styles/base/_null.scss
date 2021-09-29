@@ -1,0 +1,123 @@
+* {
+    box-sizing: inherit;
+
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: calc(100vw / 1920 * 10);
+
+    @media(max-width: 992px) {
+        font-size: calc(100vw / 992 * 10);
+    }
+
+    @media(max-width: 767px) {
+        font-size: calc(100vw / 767 * 10);
+    }
+
+    @media(max-width: 575px) {
+        font-size: calc(100vw / 375 * 10);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    color: $dark;
+    font-feature-settings: 'pnum'on,
+    'lnum'on;
+
+    @media(max-width: 992px) {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    &._lock {
+        overflow-y: hidden;
+        background: rgba($dark, .5);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+dl,
+dd,
+dt {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+select,
+button,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    cursor: default;
+}
+
+textarea {
+    resize: none;
+}
+
+figure,
+figcaption {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

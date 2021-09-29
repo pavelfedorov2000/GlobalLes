@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Каталог"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Дома
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <section class="section catalog">
+                <div class="container">
+                    <h1>Дома</h1>
+                    <div class="catalog__cards grid col-4 col-lg-3 col-md-2 col-xs-1">
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/01.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/01_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/01_xs.jpg">
+                                    <img src="img/content/catalog/01_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект «Добрыня»</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>104. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/02.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/02_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/02_xs.jpg">
+                                    <img src="img/content/catalog/02_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “ Традиция”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>89. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/03.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/03_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/03_xs.jpg">
+                                    <img src="img/content/catalog/03_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Восход”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>90. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/04.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/04_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/04_xs.jpg">
+                                    <img src="img/content/catalog/04_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Домашний”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>от 74. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/04.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/04_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/04_xs.jpg">
+                                    <img src="img/content/catalog/04_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Домашний”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>от 74. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/03.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/03_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/03_xs.jpg">
+                                    <img src="img/content/catalog/03_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Восход”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>90. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/01.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/01_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/01_xs.jpg">
+                                    <img src="img/content/catalog/01_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект «Добрыня»</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>104. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/02.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/02_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/02_xs.jpg">
+                                    <img src="img/content/catalog/02_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “ Традиция”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>89. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/02.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/02_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/02_xs.jpg">
+                                    <img src="img/content/catalog/02_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “ Традиция”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>89. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/02.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/02_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/02_xs.jpg">
+                                    <img src="img/content/catalog/02_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “ Традиция”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>89. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/04.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/04_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/04_xs.jpg">
+                                    <img src="img/content/catalog/04_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Домашний”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>от 74. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/03.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/03_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/03_xs.jpg">
+                                    <img src="img/content/catalog/03_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Восход”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>90. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section benefits">
+                <div class="container">
+                    <h2 class="benefits__title">
+                        Преимущества компании «GlobalLes»
+                    </h2>
+                    <div class="benefits__text">
+                        <p>
+                            Предлагаем широкий выбор проектов современных домов из бруса. Выполняем весь цикл работ с
+                            нуля и под ключ.
+                        </p>
+                        <p>
+                            Мы можем реализовать любой из вариантов, представленных в каталоге или построить дом по
+                            индивидуальному проекту. Наши сотрудники помогут выбрать наилучший вариант с учетом
+                            особенностей вашего участка (размеров, ландшафта и т.д.). Гарантируем строгое соблюдение
+                            инженерно- технических требований, предъявляемых к строению. Дома из бруса под ключ,
+                            построенные нашей компанией надежны и безопасны. Стоимость напрямую зависит от площади
+                            застройки.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <!-- @@include('../../blocks/modules/popups/_popups.html') -->
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

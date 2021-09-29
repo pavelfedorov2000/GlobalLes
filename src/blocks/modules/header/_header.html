@@ -1,0 +1,29 @@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <svg class="logo__img" role="img" aria-label="Логотип GlobalLes">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <button class="header__catalog-btn tablet-visible flex aic" type="button">
+                Каталог
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.42893 0.928887L1.42893 3.9104L10.481 3.91039L0.374651 14.0167L2.48321 16.1253L12.5896 6.01896L12.5896 15.071L15.5711 15.071L15.5711 0.928887L1.42893 0.928887Z"
+                        fill="#00B461" />
+                </svg>
+            </button>
+            @@include('./_header__menu.html')
+            <a href="tel:+375298888888" class="phone header__phone">+375 (29) 888 88 88</a>
+            <button class="burger-btn tablet-visible">
+                <svg>
+                    <use xlink:href="img/sprite.svg#burger"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    @@include('../drop-catalog/_drop-catalog.html')
+</header>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Карточка товара"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page">
+            <nav class="breadcrumbs" aria-label="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Дома
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Проект “Традиция”
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <div class="product-card">
+                <div class="container">
+                    <div class="product-card__top">
+                        <h1>Проект <span>«Традиция»</span></h1>
+                        <div style="text-align: center;">
+                            <a href="#feedback" class="btn product-card__btn">
+                                Заказать проект
+                                <svg class="btn__arrow" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.42893 0.928887L1.42893 3.9104L10.481 3.91039L0.374651 14.0167L2.48321 16.1253L12.5896 6.01896L12.5896 15.071L15.5711 15.071L15.5711 0.928887L1.42893 0.928887Z"
+                                        fill="#F5F5F5" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="#feedback" class="btn product-card__btn">
+                            Заказать проект
+                            <svg class="btn__arrow">
+                                <use xlink:href="img/sprite.svg#btn-arr"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <dl class="product-card__description">
+                        <div class="product-card__description-item">
+                            <dt>Общая площадь, м2</dt>
+                            <dd>90; 150; 200</dd>
+                        </div>
+                        <div class="product-card__description-item">
+                            <dt>Размеры фундамента, м</dt>
+                            <dd>14 x 12</dd>
+                        </div>
+                        <div class="product-card__description-item">
+                            <dt>Материал стен</dt>
+                            <dd>Брус</dd>
+                        </div>
+                        <div class="product-card__description-item">
+                            <dt>Стоймость</dt>
+                            <dd>от <span>89. 550</span> BYN </dd>
+                        </div>
+                    </dl>
+                    <div class="swiper-container product-card__gallery">
+                        <div class="swiper-wrapper">
+                            <a data-fancybox="gallery" href="img/content/product-card-slider.jpg"
+                                class="swiper-slide product-card__gallery-item">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/product-card-slider.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/product-card-slider_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/product-card-slider_xs.jpg">
+                                    <img src="img/content/product-card-slider_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <a data-fancybox="gallery" href="img/content/product-card-slider.jpg"
+                                class="swiper-slide product-card__gallery-item">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/product-card-slider.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/product-card-slider_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/product-card-slider_xs.jpg">
+                                    <img src="img/content/product-card-slider_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <a data-fancybox="gallery" href="img/content/product-card-slider.jpg"
+                                class="swiper-slide product-card__gallery-item">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/product-card-slider.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/product-card-slider_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/product-card-slider_xs.jpg">
+                                    <img src="img/content/product-card-slider_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <a data-fancybox="gallery" href="img/content/product-card-slider.jpg"
+                                class="swiper-slide product-card__gallery-item">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/product-card-slider.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/product-card-slider_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/product-card-slider_xs.jpg">
+                                    <img src="img/content/product-card-slider_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <a data-fancybox="gallery" href="img/content/product-card-slider.jpg"
+                                class="swiper-slide product-card__gallery-item">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/product-card-slider.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/product-card-slider_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/product-card-slider_xs.jpg">
+                                    <img src="img/content/product-card-slider_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <button class="swiper-button-prev">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#slider-arr"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#slider-arr"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section characteristics">
+                <div class="container">
+                    <div class="md-flex">
+                        <h2 class="section-title characteristics__title">Характеристики</h2>
+                        <div class="characteristics__content">
+                            <dl class="characteristics__list">
+                                <div class="characteristics__item">
+                                    <dt>Общая площадь, м2</dt>
+                                    <dd>200</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Площадь фундамента, м</dt>
+                                    <dd>14 x 12</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Фундамент</dt>
+                                    <dd>Монолитный</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Материал стен</dt>
+                                    <dd>Брус</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Кровля</dt>
+                                    <dd>Металлочерепица</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Крыша</dt>
+                                    <dd>Есть</dd>
+                                </div>
+                                <div class="characteristics__item">
+                                    <dt>Этажность</dt>
+                                    <dd>2</dd>
+                                </div>
+                            </dl>
+                            <small class="characteristics__descr">
+                                Есть возможность внесения индивидуальных изменений
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section home-plan">
+                <div class="container">
+                    <div class="md-flex">
+                        <h2 class="section-title home-plan__title">План дома</h2>
+                        <div class="home-plan__content">
+                            <img src="img/content/plan.jpg" alt="Схема дома">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section similar-projects">
+                <div class="container">
+                    <div class="grid col-4 col-md-2 col-xs-1">
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/01.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/01_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/01_xs.jpg">
+                                    <img src="img/content/catalog/01_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект «Добрыня»</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>104. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/02.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/02_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/02_xs.jpg">
+                                    <img src="img/content/catalog/02_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “ Традиция”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>89. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/03.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/03_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/03_xs.jpg">
+                                    <img src="img/content/catalog/03_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Восход”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>90. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-card">
+                            <a href="#" class="catalog-card__img">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="img/content/catalog/04.jpg">
+                                    <source media="(min-width: 576px)" srcset="img/content/catalog/04_sm.jpg">
+                                    <source media="(min-width: 320px)" srcset="img/content/catalog/04_xs.jpg">
+                                    <img src="img/content/catalog/04_xs.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="catalog-card__content">
+                                <h4 class="catalog-card__title">Проект “Домашний”</h4>
+                                <div class="catalog-card__sizes">
+                                    <b>Размеры:</b>
+                                    <ul class="catalog-card__sizes-list">
+                                        <li>90 м<sup>2</sup></li>
+                                        <li>100 м<sup>2</sup></li>
+                                        <li>150 м<sup>2</sup></li>
+                                        <li>200 м<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-card__price">
+                                    от <b>от 74. 550</b> BYN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

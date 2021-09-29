@@ -1,0 +1,32 @@
+.menu {
+    &__link {
+        font-weight: 500;
+        transition: .3s all;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $accent;
+                //font-weight: 700;
+            }
+        }
+    }
+
+    &__sublist {
+        display: none;
+        margin-top: 1rem;
+        padding: 2rem 0;
+        border-top: 0.1rem solid $border-color;
+        border-bottom: 0.1rem solid $border-color;
+    }
+
+    &__sublist-item {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__sublist-link {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+}
