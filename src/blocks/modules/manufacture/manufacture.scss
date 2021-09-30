@@ -18,7 +18,7 @@
     // .manufacture__title
 
     &__title {
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
             margin-bottom: 3rem;
         }
 
@@ -33,7 +33,7 @@
         line-height: 12rem;
         margin-left: 15.5rem;
 
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
             text-align: center;
             margin-left: 0;
         }

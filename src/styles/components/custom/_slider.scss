@@ -27,7 +27,7 @@
     opacity: 1;
     margin: 0 !important;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
         width: 33.3333%;
     }
 
@@ -36,7 +36,7 @@
             width: 10.5rem;
         }
 
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
             width: 33.3333%;
         }
     }
