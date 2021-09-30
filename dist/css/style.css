@@ -1610,8 +1610,7 @@ p:not(:last-child) {
 }
 
 .manufacture__item--1 {
-  width: 50rem;
-  max-height: 14.4rem;
+  max-height: 12rem;
 }
 
 .manufacture__item--1:before {
@@ -1631,7 +1630,7 @@ p:not(:last-child) {
 }
 
 .manufacture__item--5 {
-  width: 34.6rem;
+  width: 32rem;
 }
 
 .manufacture__item--5:before {
@@ -2711,11 +2710,11 @@ p:not(:last-child) {
   }
 
   .manufacture__item--1 {
-    max-height: 9.2rem;
+    max-height: 8rem;
   }
 
   .manufacture__item--4 {
-    max-height: 14rem;
+    max-height: 12rem;
   }
 
   .manufacture__item-title {
