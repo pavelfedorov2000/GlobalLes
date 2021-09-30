@@ -1,9 +1,8 @@
 .drop-catalog {
-
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
+    right: 0;
     z-index: 101;
     width: 100%;
     padding: 4rem 0 6rem;
@@ -11,15 +10,17 @@
     transition: .5s all;
     padding: 4rem 0 6rem;
     background-color: #F5F5F5;
-    transition: .3s all;
+    opacity: 0;
+    transition: .5s all;
 
     @media(max-width: 992px) {
+        display: none;
+        opacity: 1;
         padding: 2rem 0;
     }
 
     &--active {
-        //opacity: 1;
-        //visibility: visible;
+        opacity: 1;
     }
 
     &__close {

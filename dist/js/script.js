@@ -36,12 +36,12 @@ $(function () {
     });
 
     $('.header__catalog-btn').on('click', function () {
-        $(this).addClass('header__catalog-btn--active');
-        $('.drop-catalog').addClass('drop-catalog--active');
+        $(this).toggleClass('header__catalog-btn--active');
+        $('.drop-catalog').fadeToggle('300');
     });
     $('.drop-catalog__close').on('click', function () {
         $('.header__catalog-btn').removeClass('header__catalog-btn--active');
-        $(this).parent().removeClass('drop-catalog--active');
+        $(this).parent().fadeOut('300');
     });
 
     $('.tab').on('click', function (e) {
